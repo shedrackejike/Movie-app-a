@@ -1,8 +1,8 @@
 [{
     "name": "The Boys",
     "imdb": 9.3,
-    "sposter": "image/the boys.jpg",
-    "bposter": "image/user.jpg",
+    "sposter": "image/user.jpg",
+    "bposter": "image/the boys.jpg",
     "genre": "Action",
     "type": "series",
     "url": "the boys.html",
