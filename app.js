@@ -89,7 +89,7 @@ fetch(json_url)
     let play = document.getElementById("play");
 
     play.addEventListener("click", () => {
-      if (video.pause) {
+      if (video.paused) {
         video.play();
         play.innerHTML = `Play <i class="bi bi-pause-fill"></i>`;
       } else {
