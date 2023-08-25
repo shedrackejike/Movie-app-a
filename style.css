@@ -687,6 +687,17 @@ a {
   margin-top: 15px;
 }
 
+#bgvid{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
 
 
 
@@ -774,6 +785,15 @@ a {
     transform: translate(-50%, -50%) scale(10.2s);
     opacity: 1;
     transition: all 0.4s ease-out;
+  }
+}
+@media screen and (max-width: 420px) {
+
+  section video {
+    
+    height: 100%;
+    width: 100%;
+    
   }
 }
 

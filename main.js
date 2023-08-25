@@ -49,6 +49,8 @@ const regFunc = (e) => {
     const password = e.target.password.value;
     localStorage.setItem(`${email}`,JSON.stringify({email,password}));
     alert("Registered Successfully");
+    window.location.href = "Login" //the url of the homepage
+
 
    
 }
