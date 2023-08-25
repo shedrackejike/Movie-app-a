@@ -775,7 +775,7 @@ a {
     max-width: 320px;
     width: 100%;
     top: 20%;
-    left: 0%;
+    margin: auto;
     background: #fff;
     padding: 25px;
     border-radius: 12px;
