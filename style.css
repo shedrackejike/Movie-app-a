@@ -696,6 +696,12 @@ a {
   left: 0;
 }
 
+.input_box .error{
+ color:#d93025;
+ font-size: 12px;
+ display: none;
+}
+
 
 
 
@@ -775,7 +781,7 @@ a {
     max-width: 320px;
     width: 100%;
     top: 20%;
-    left: 10%;
+    left: 5%;
     background: #fff;
     padding: 25px;
     border-radius: 12px;

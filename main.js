@@ -47,16 +47,22 @@ const regFunc = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    localStorage.setItem(`${email}`,JSON.stringify({email,password}));
-    alert("Registered Successfully");
-    window.location.href = "Login" //the url of the homepage
+
+    const passwordConfirm = e.target.passwordConfirm.value;
+
+    if(password === passwordConfirm){
+      localStorage.setItem(`${email}`,JSON.stringify({email,password,passwordConfirm}));
+      alert("Registered Successfully");
+      window.location.href = "http://127.0.0.1:5501/movie.html" //the url of the homepage
+    }else{
+      alert("Please Check passwords");
+    }
 
 
    
 }
 
 const logfunc = (e) =>{
-    //  For login
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
@@ -73,3 +79,5 @@ const logfunc = (e) =>{
         alert("Sign Up")
     }
 }
+
+
