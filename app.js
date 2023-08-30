@@ -114,6 +114,7 @@ fetch(json_url)
         return ele.type === "series"
       })
 
+       
       series_arry.forEach((ele, i) => {
         let { name, imdb, date, sposter, bposter, genre, url } = ele;
         let card = document.createElement("a");

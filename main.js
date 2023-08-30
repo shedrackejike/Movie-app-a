@@ -53,7 +53,7 @@ const regFunc = (e) => {
     if(password === passwordConfirm){
       localStorage.setItem(`${email}`,JSON.stringify({email,password,passwordConfirm}));
       alert("Registered Successfully");
-      window.location.href = "http://127.0.0.1:5501/movie.html" //the url of the homepage
+      window.location.href = "/movie.html" //the url of the homepage
     }else{
       alert("Please Check passwords");
     }
@@ -71,7 +71,7 @@ const logfunc = (e) =>{
         user = JSON.parse(user);
         if (user.password == password) {
             localStorage.setItem("auth", "true");
-            window.location.href = "http://127.0.0.1:5501/movie.html" //the url of the homepage
+            window.location.href = "/movie.html" //the url of the homepage
         } else {
             alert("Invalid Credentials")
         }
